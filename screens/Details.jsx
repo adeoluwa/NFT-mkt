@@ -74,6 +74,9 @@ const Details = ({ route, navigation }) => {
         renderItem={({ item }) => <DetailsBid bid={item} />}
         keyExtractor={(item) => item?.id}
         showsVerticalScrollIndicator={false}
+        // contentContainerStyle={{
+        //   paddingBottom: SIZES.extraLarge * 3,
+        // }}
         contentContainerStyle={{ paddingBottom: SIZES.extraLarge * 3 }}
         ListHeaderComponent={() => (
           <React.Fragment>

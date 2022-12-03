@@ -1,22 +1,23 @@
+import React from 'react';
+
 import { View, Text, Image } from 'react-native';
 
 import { EthPrice } from './SubInfo';
 
 import { COLORS, SIZES, FONTS } from '../constants';
 
-import React from 'react';
-
 const DetailsBid = ({ bid }) => {
   return (
     <View
       style={{
-        width: '100% ',
+        width: '100%',
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
         marginVertical: SIZES.base,
-        paddingHorizontal: SIZES.base * 2,
+        paddingHorizontal: SIZES.base,
       }}
+      key={bid.id}
     >
       <Image
         source={bid.image}
@@ -24,7 +25,13 @@ const DetailsBid = ({ bid }) => {
         style={{ width: 48, height: 48 }}
       />
 
-      {/* <View>
+      <View
+        style={{
+          flex: 1,
+          alignItems: 'center',
+          paddingHorizontal: SIZES.base,
+        }}
+      >
         <Text
           style={{
             fontFamily: FONTS.semiBold,
@@ -44,9 +51,9 @@ const DetailsBid = ({ bid }) => {
         >
           {bid.date}
         </Text>
-      </View> */}
+      </View>
 
-      {/* <EthPrice price={bid.price} /> */}
+      <EthPrice price={bid.price} />
     </View>
   );
 };

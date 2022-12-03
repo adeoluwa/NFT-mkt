@@ -1,13 +1,14 @@
 {
   "expo": {
-    "name": "NFT-mkt",
-    "slug": "NFT-mkt",
+    "name": "deez NFT",
+    "slug": "deez-NFT",
+    "description": "This is a mini NFT market place app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/Arts-logo.png ",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/Arts-logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -18,16 +19,23 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "shinobi"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/Arts-logo.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.black_shinobi.deezNFT"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/Arts-logo.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3b6d8e01-4cb3-49ff-8d75-7dc97f368a06"
+      }
     }
   }
 }

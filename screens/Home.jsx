@@ -1,5 +1,3 @@
-// import { View, Text, SafeAreaView, FlatList } from 'react-native';
-
 import React, { useState } from 'react';
 
 import { View, SafeAreaView, FlatList } from 'react-native';

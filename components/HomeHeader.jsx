@@ -1,10 +1,9 @@
+import React from 'react';
 import { View, Text, Image, TextInput } from 'react-native';
 
 import { COLORS, FONTS, SIZES, assets } from '../constants';
 
-import React from 'react';
-
-const HomeHeader = ({onSearch}) => {
+const HomeHeader = ({ onSearch }) => {
   return (
     <View
       style={{
@@ -22,10 +21,7 @@ const HomeHeader = ({onSearch}) => {
         <Image
           source={assets.logo}
           resizeMode="contain"
-          style={{
-            width: 90,
-            height: 25,
-          }}
+          style={{ width: 90, height: 25 }}
         />
 
         <View style={{ width: 45, height: 45 }}>
@@ -56,8 +52,9 @@ const HomeHeader = ({onSearch}) => {
             color: COLORS.white,
           }}
         >
-          Hello, Deolu 👋
+          Hello there 👋
         </Text>
+
         <Text
           style={{
             fontFamily: FONTS.bold,
@@ -66,7 +63,7 @@ const HomeHeader = ({onSearch}) => {
             marginTop: SIZES.base / 2,
           }}
         >
-          Let's find you a masterpiece
+          Let’s find you a masterpiece.
         </Text>
       </View>
 
